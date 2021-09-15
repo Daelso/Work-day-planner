@@ -6,7 +6,7 @@
 ///////////////////////////
 //////global vars/////////
 /////////////////////////
-var date = $('#date')
+var date = $('#time-block')
 date.text("Today's date is: " + moment().format("dddd MMM Do YY, h:mm a"));
 
 var saveBtn9 = $('#save9')
@@ -136,6 +136,7 @@ function saveFour(event){
 
 function saveFive(event){
     btnClicked = $(event.target);
+    console.log(btnClicked)
     console.log("saved");
     var text_to_store = btnClicked.siblings('input').val();
     localStorage.setItem("fivePM", text_to_store);
