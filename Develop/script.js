@@ -3,26 +3,46 @@
 ////////API stuff///////
 ////////////////////////
 
+var format = "H"
+
+var currentTime = moment().format(format);
+var after9 = moment('10', format);
+console.log(currentTime); // true
+
+var test = document.querySelector('.lists');
 
 
-var currentTime = moment();
-var after9 = moment('10 am', 'h a');
-console.log(currentTime.isAfter(after9)); // true
+// var checkafter9 = currentTime.isAfter(after9)
+// console.log(checkafter9)
+
+// var textareas = $('ul')
+
+
+// if(currentTime.isAfter(after9) == true){
+//     textareas.children().eq(0).children().eq(1).css('background', '#d3d3d3');
 
 
 
-var checkafter9 = currentTime.isAfter(after9)
-console.log(checkafter9)
+// }
 
-var textareas = $('ul')
+$('.hours').each(function (){
+    if(currentTime >= 18 || currentTime < 9){ //6PM to work start is grey 
+        $('.hours').find('textarea').css('background', '#d3d3d3')
+    }
+
+    if(currentTime == 9){
+        $('.hours').find('textarea').css('background', '##ff6961')
+    }
 
 
-if(currentTime.isAfter(after9) == true){
-    textareas.children().eq(0).children().eq(1).css('background', '#d3d3d3');
 
 
 
-}
+
+
+
+})
+
 
 ///////////////////////////
 //////global vars/////////
@@ -56,8 +76,6 @@ var fourPM = $('#fourText')
 
 var saveBtn5 = $('#save5')
 var fivePM = $('#fiveText')
-
-var testicles = document.querySelector("root")
 
 
 /////////////////////
