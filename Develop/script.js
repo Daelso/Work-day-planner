@@ -3,6 +3,11 @@
 ////////API stuff///////
 ////////////////////////
 
+var currentTime = moment().format("h:mm a")
+console.log(currentTime)
+
+
+
 ///////////////////////////
 //////global vars/////////
 /////////////////////////
@@ -36,6 +41,7 @@ var fourPM = $('#fourText')
 var saveBtn5 = $('#save5')
 var fivePM = $('#fiveText')
 
+var testicles = document.querySelector("root")
 
 
 /////////////////////
@@ -80,7 +86,7 @@ init()
 function saveNine(event){
     btnClicked = $(event.target);
     console.log("saved");
-    var text_to_store = btnClicked.siblings('input').val();
+    var text_to_store = btnClicked.siblings('textarea').val();
     localStorage.setItem("nineAM", text_to_store);
 }
 
@@ -88,49 +94,49 @@ function saveNine(event){
 function saveTen(event){
     btnClicked = $(event.target);
     console.log("saved");
-    var text_to_store = btnClicked.siblings('input').val();
+    var text_to_store = btnClicked.siblings('textarea').val();
     localStorage.setItem("tenAM", text_to_store);
 }
 
 function saveEleven(event){
     btnClicked = $(event.target);
     console.log("saved");
-    var text_to_store = btnClicked.siblings('input').val();
+    var text_to_store = btnClicked.siblings('textarea').val();
     localStorage.setItem("elevenAM", text_to_store);
 }
 
 function saveTwelve(event){
     btnClicked = $(event.target);
     console.log("saved");
-    var text_to_store = btnClicked.siblings('input').val();
+    var text_to_store = btnClicked.siblings('textarea').val();
     localStorage.setItem("twelvePM", text_to_store);
 }
 
 function saveOne(event){
     btnClicked = $(event.target);
     console.log("saved");
-    var text_to_store = btnClicked.siblings('input').val();
+    var text_to_store = btnClicked.siblings('textarea').val();
     localStorage.setItem("onePM", text_to_store);
 }
 
 function saveTwo(event){
     btnClicked = $(event.target);
     console.log("saved");
-    var text_to_store = btnClicked.siblings('input').val();
+    var text_to_store = btnClicked.siblings('textarea').val();
     localStorage.setItem("twoPM", text_to_store);
 }
 
 function saveThree(event){
     btnClicked = $(event.target);
     console.log("saved");
-    var text_to_store = btnClicked.siblings('input').val();
+    var text_to_store = btnClicked.siblings('textarea').val();
     localStorage.setItem("threePM", text_to_store);
 }
 
 function saveFour(event){
     btnClicked = $(event.target);
     console.log("saved");
-    var text_to_store = btnClicked.siblings('input').val();
+    var text_to_store = btnClicked.siblings('textarea').val();
     localStorage.setItem("fourPM", text_to_store);
 }
 
@@ -138,7 +144,7 @@ function saveFive(event){
     btnClicked = $(event.target);
     console.log(btnClicked)
     console.log("saved");
-    var text_to_store = btnClicked.siblings('input').val();
+    var text_to_store = btnClicked.siblings('textarea').val();
     localStorage.setItem("fivePM", text_to_store);
 }
 

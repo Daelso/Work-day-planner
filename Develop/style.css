@@ -6,14 +6,17 @@ body {
 
 textarea {
   background: transparent;
-  border: seagreen;
+  border: transparent;
   resize: none;
-  width: 800px;
+  display: inline-flex;
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
-  margin-left: 15px;
-  flex-wrap: wrap;
+  position: relative;
+  width: 85%;
+  overflow: hidden;
+
+  
 }
 
 .jumbotron {
@@ -66,14 +69,31 @@ textarea {
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
-  padding: 35px 45px;
+  padding: 25px 25px;
+
 }
 
-.saveBtn i:hover {
+.saveBtn:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
 
 .lists{
 list-style: none;
+}
+
+.align{
+  vertical-align: middle;
+
+}
+
+
+label {
+    display: inline-block;
+    font-size: medium;
+    margin-left: 5px;
+    width: 5%;
+    min-width: 60px;
+    vertical-align: middle;
+
 }
