@@ -149,7 +149,7 @@ function saveFive(event){
     localStorage.setItem("fivePM", text_to_store);
 }
 
-$('textarea').each(function (index, elem)
+$('textarea').each(function (index, elem) //handles textarea color
 {
     console.log(elem)
     console.log(elem.dataset.hour)
