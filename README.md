@@ -12,7 +12,7 @@ It's frustrating that I could not figure out a more efficient way to store score
 Click index.html or visit the deployment link!
 
 ## Screenshot
-![Alt text](https://i.gyazo.com/d2144455ad891907b6b6a836605b2f52.png "Picture of planner at 7:15, all grayed out.)
+![Alt text](https://i.gyazo.com/d2144455ad891907b6b6a836605b2f52.png "Picture of planner at 7:15, all grayed out.")
 ![Alt text](https://i.gyazo.com/3ea8a0381b0c5d41c1b0a8c3deeaaa59.png "Schedule if it was noon")
 
 ## Deployment Link
