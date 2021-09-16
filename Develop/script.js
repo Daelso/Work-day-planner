@@ -3,10 +3,26 @@
 ////////API stuff///////
 ////////////////////////
 
-var currentTime = moment().format("h:mm a")
-console.log(currentTime)
 
 
+var currentTime = moment();
+var after9 = moment('10 am', 'h a');
+console.log(currentTime.isAfter(after9)); // true
+
+
+
+var checkafter9 = currentTime.isAfter(after9)
+console.log(checkafter9)
+
+var textareas = $('ul')
+
+
+if(currentTime.isAfter(after9) == true){
+    textareas.children().eq(0).children().eq(1).css('background', '#d3d3d3');
+
+
+
+}
 
 ///////////////////////////
 //////global vars/////////
