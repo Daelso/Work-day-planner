@@ -6,42 +6,9 @@
 var format = "H"
 
 var currentTime = moment().format(format);
-var after9 = moment('10', format);
-console.log(currentTime); // true
 
-var test = document.querySelector('.lists');
-
-
-// var checkafter9 = currentTime.isAfter(after9)
-// console.log(checkafter9)
-
-// var textareas = $('ul')
-
-
-// if(currentTime.isAfter(after9) == true){
-//     textareas.children().eq(0).children().eq(1).css('background', '#d3d3d3');
-
-
-
-// }
-
-$('.hours').each(function (){
-    if(currentTime >= 18 || currentTime < 9){ //6PM to work start is grey 
-        $('.hours').find('textarea').css('background', '#d3d3d3')
-    }
-
-    if(currentTime == 9){
-        $('.hours').find('textarea').css('background', '##ff6961')
-    }
-
-
-
-
-
-
-
-
-})
+var getCurrentTimeint = parseInt(currentTime)
+console.log(getCurrentTimeint)
 
 
 ///////////////////////////
@@ -181,6 +148,22 @@ function saveFive(event){
     var text_to_store = btnClicked.siblings('textarea').val();
     localStorage.setItem("fivePM", text_to_store);
 }
+
+$('textarea').each(function (index, elem)
+{
+    console.log(elem)
+    console.log(elem.dataset.hour)
+  
+    if(elem.dataset.hour < getCurrentTimeint){
+      elem.style.backgroundColor = "#d3d3d3"
+    } else if (elem.dataset.hour > getCurrentTimeint){
+        elem.style.backgroundColor = "#77dd77"
+      
+    } else if (elem.dataset.hour == getCurrentTimeint){
+        elem.style.backgroundColor = "#ff6961"
+    }
+  
+    })
 
 
 
