@@ -3,11 +3,11 @@
 ////////API stuff///////
 ////////////////////////
 
-var format = "H"
+var format = "H" //quick format
 
-var currentTime = moment().format(format);
+var currentTime = moment().format(format); //gets current time in string
 
-var getCurrentTimeint = parseInt(currentTime)
+var getCurrentTimeint = parseInt(currentTime) //change this to integer to test different times.
 console.log(getCurrentTimeint)
 
 
@@ -151,7 +151,6 @@ function saveFive(event){
 
 $('textarea').each(function (index, elem) //handles textarea color
 {
-    console.log(elem)
     console.log(elem.dataset.hour)
   
     if(elem.dataset.hour < getCurrentTimeint){
